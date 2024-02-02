@@ -3,4 +3,46 @@ body{
     font-family: 'Nanum Myeongjo', serif;
     font-family: 'Noto Serif', serif;
     font-family: 'Playfair Display', serif;
+    padding: 0;
+    margin: 0
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+
+.search{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.inputSearch {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.serachIcon {
+    color: white;
+    background-color: red;
+    font-size: 30px;
+}
+
+.inconContainer{
+    background-color: red;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inconContainer:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+.input{
+    display: flex; 
 }
