@@ -1,4 +1,6 @@
+
 const search = async (business) => {
+    /*
     const url = `https://local-business-data.p.rapidapi.com/search?query=$(business)&limit=10&language=en&`;
     const options = {
         method: 'GET',
@@ -7,9 +9,10 @@ const search = async (business) => {
             '´X-RapidAPI-HOST': 'local-business-data.p.rapidapi.com'
         }
     };
-    
+   */ 
     try {
-        const response = await fetch(url, options);
+        const url = '../api/business.json'
+        const response = await fetch(url);
         const result = await response.json();
         return result.data
     } catch (error) {
