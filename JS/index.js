@@ -1,20 +1,20 @@
 const btnIcon = document.getElementById('iconSearch')
 const inputSearch = document.getElementById('inputSearch')
-const businessCard= document.getElementById('businessCard').content 
-const businessContainer = document.getElementById('business')
-const fragment = document.createDocumentFragment()
+//const businessCard= document.getElementById('businessCard').content 
+//const businessContainer = document.getElementById('business')
+//const fragment = document.createDocumentFragment()
 let business = []
 
 btnIcon.addEventListener('click', async () => {
 	if(inputSearch.value.trim().length > 0){
-		//business = seaarch(inputSearch.value)
+		//business = search(inputSearch.value)
 		business = await search (inputSearch.value)
-		await dibujarNegocios(business)
-		window.location.href = '#business'
-		//console, log('@@@ business =>', business) //impresion de los negocias 
+		//await dibujarNegocios(business)
+		//window.location.href = '#business'
+		console. log('@@@ business =>', business) //impresion de los negocias 
 	}
 })
-
+/*
 const dibujarNegocios = negocios => {
 	businessContainer.innerHTML = ''
 	negocios.forEach((item) => {
@@ -27,4 +27,4 @@ const dibujarNegocios = negocios => {
 		fragment.appendChild(clone)
 	})
 	businessContainer.appendChild(fragment)
-}
+}*/
